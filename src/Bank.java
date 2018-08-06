@@ -17,8 +17,10 @@ public class Bank {
 			cust2.deposit(453.11);
 			cust2.withdraw(23.99);
 			printInfo(cust2);
-
-		System.out.println("The number of customers: " + 2);
+			
+			
+			cust1.customerCounter();
+		
 	}
 	
 	//created method to print created object parameters/info
@@ -32,5 +34,5 @@ public class Bank {
 
 		System.out.println("Your Current Balance is: " + a.getBalance());
 	}
-
+	
 }

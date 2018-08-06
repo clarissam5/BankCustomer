@@ -12,6 +12,8 @@ public class Account {
 	String accountType;
 	private double balance;
 	double amount;
+		//created to help count objects
+	static int i;
 	
 	// Account object constructor
 	public Account(String name, int accountNum, String accountType, double balance) {
@@ -19,6 +21,7 @@ public class Account {
 		this.accountNum = accountNum;
 		this.accountType = accountType;
 		balance = 0.0;
+		i++;
 	}
 	 //"Deposit" method for object attribute
 	public void deposit (double amount) {
@@ -38,5 +41,11 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
+	
+	//METHOD FOR COUNTERING A TYPE OF OBJECT IN A CLASS
+	public void customerCounter() {
+		System.out.println("The amount of customers: " + i);
+	}
+	
 	
 }
